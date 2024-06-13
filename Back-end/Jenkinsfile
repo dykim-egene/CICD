@@ -5,7 +5,7 @@ pipeline {
         
         stage('github-clone') {
             steps {
-                echo 'Hello'
+                echo 'Hello - {repository url}'
                 git branch: 'main', credentialsId: 'github-token', url: 'https://github.com/dykim-egene/CICD.git'
             }
         }
